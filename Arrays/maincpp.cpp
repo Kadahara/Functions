@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void FillRand(int arr[], const int n);
@@ -23,10 +23,10 @@ void main()
 	Print(arr, n);
 	Sort(arr, n);
 	Print(arr, n);
-	cout << "Ñóììà ÷èñåë: " << Sum(arr, n) << endl;
-	cout << "Ñðåäíåå àðåôìåòè÷åñêîå: " << Avg(arr, n) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå: " << minValueIn(arr, n) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå: " << maxValueIn(arr, n) << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ»: " << Sum(arr, n) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€ÐµÑ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ: " << Avg(arr, n) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: " << minValueIn(arr, n) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: " << maxValueIn(arr, n) << endl;
 	
 	//____________________________________________________________________
 	const int SIZE = 8;
@@ -36,10 +36,10 @@ void main()
 	Print(brr, SIZE);
 	Sort(brr,SIZE);
 	Print(brr, SIZE);
-	cout << "Ñóììà ÷èñåë: " << Sum(brr, n) << endl;
-	cout << "Ñðåäíåå àðåôìåòè÷åñêîå : " << Avg(brr, n) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå: " << minValueIn(brr, n) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå: " << maxValueIn(brr, n) << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ»: " << Sum(brr, n) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€ÐµÑ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ : " << Avg(brr, n) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: " << minValueIn(brr, n) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: " << maxValueIn(brr, n) << endl;
 
 
 	//__________________________________________________________________________
@@ -56,7 +56,7 @@ void main()
 
 void FillRand(int arr[], const int n)
 {
-	//Çàïîëíåíèå ìàññèâà ñëó÷àéíûìè ÷èñëàìè.
+	//Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð° ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ð¼Ð¸ Ñ‡Ð¸ÑÐ»Ð°Ð¼Ð¸.
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 100;
@@ -64,7 +64,7 @@ void FillRand(int arr[], const int n)
 }
 void Print(int arr[], const int n)
 {
-	//Âûâîä
+	//Ð’Ñ‹Ð²Ð¾Ð´
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";
@@ -73,7 +73,7 @@ void Print(int arr[], const int n)
 }
 void Sort(int arr[], const int n)
 {
-	//ñîðòèðîâêà
+	//ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = i + 1; j < n; j++)
@@ -88,7 +88,7 @@ void Sort(int arr[], const int n)
 	}
 }
 
-//Ñóììà
+//Ð¡ÑƒÐ¼Ð¼Ð°
 int Sum(int arr[], const int n)
 {
 	int sum = 0;
@@ -100,13 +100,13 @@ int Sum(int arr[], const int n)
 }
 
 
-//Ñð. àðåô.
+//Ð¡Ñ€. Ð°Ñ€ÐµÑ„.
 double Avg(int arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;
 }
 
-//Ìèíèìàëüíîå çíà÷åíèå
+//ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ
 int minValueIn(int arr[], const int n)
 {
 	int min = arr[0];
@@ -117,7 +117,7 @@ int minValueIn(int arr[], const int n)
 	return min;
 }
 
-//ìàêñèìàëüíîå çíà÷åíèå
+//Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ
 int maxValueIn(int arr[], const int n)
 {
 	int max = arr[0];
