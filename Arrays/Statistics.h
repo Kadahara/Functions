@@ -1,22 +1,19 @@
 #pragma once
 #include"constants.h"
 
-int Sum(int arr[], const int n);
-double Sum(double arr[], const int n);
-int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS);
-double Sum(double arr[ROWS][COLS], const int ROWS, const int COLS);
+template<typename T>int Sum(T arr[], const int n);
 
-double Avg(int arr[], const int n);
-double Avg(double arr[], const int n);
-double Avg(int arr[ROWS][COLS], const int ROWS, const int COLS);
-double Avg(double arr[ROWS][COLS], const int ROWS, const int COLS);
+template<typename T>int Sum(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
-int minValueIn(int arr[], const int n);
-int maxValueIn(int arr[], const int n);
-int maxValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS);
-int minValueIn(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
-double minValueIn(double arr[], const int n);
-double maxValueIn(double arr[], const int n);
-double maxValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS);
-double minValueIn(double arr[ROWS][COLS], const int ROWS, const int COLS);
+template<typename T>double Avg(T arr[], const int n);
+
+template<typename T>double Avg(T arr[ROWS][COLS], const int ROWS, const int COLS);
+
+
+template<typename T>int minValueIn(T arr[], const int n);
+template<typename T>int maxValueIn(T arr[], const int n);
+template<typename T>int maxValueIn(T arr[ROWS][COLS], const int ROWS, const int COLS);
+template<typename T>int minValueIn(T arr[ROWS][COLS], const int ROWS, const int COLS);
+
+

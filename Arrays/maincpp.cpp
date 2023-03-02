@@ -1,8 +1,11 @@
 ﻿#include"stdafx.h"
 #include"constants.h"
 #include"FillRand.h"
+#include"FillRand.cpp"
 #include"Print.h"
+#include"Print.cpp"
 #include"Sort.h"
+#include"Sort.cpp"
 #include"Statistics.h"
 
 
